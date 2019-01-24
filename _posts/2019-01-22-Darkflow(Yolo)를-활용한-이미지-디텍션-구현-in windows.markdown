@@ -222,7 +222,7 @@ loss가 어느 정도 수렴해도 지속적으로 학습을 수행해야 성과
 
 이 상태에서 예측한 결과:
 
-![learning_step_12435](/assets/image/how_to_use_darkflow/img33.png)
+![learning_step_12435](/assets/image/how_to_use_darkflow/img36.png)
 
 완벽하지는 않지만 제법 잘 찾아내는 것 같다. 이제 모델이 학습된다는 것을 눈으로 확인하였으니 img augmentation을 통해 학습 데이터를 증폭시키고, 더 큰 yolo 구조를 사용하여 개선된 모델을 만들 계획이다.
 

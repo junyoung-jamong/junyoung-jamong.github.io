@@ -10,32 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2019-01-15-Reaserch-note.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2019-01-15-Reaserch-note.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="323">
-                <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2019-01-22-Darkflow(Yolo)를-활용한-이미지-디텍션-구현-in windows.markdown" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2019-01-22-Darkflow(Yolo)를-활용한-이미지-디텍션-구현-in windows.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="258">
-                <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,7 +19,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -99,7 +74,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07060063" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -170,21 +144,21 @@
         <state relative-caret-position="-27138" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2019-01-15-Reaserch-note.markdown">
+    <entry file="file://$PROJECT_DIR$/2019-01-22-Darkflow(Yolo)를-활용한-이미지-디텍션-구현-in windows.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="323">
-            <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+          <first_editor relative-caret-position="3990">
+            <caret line="210" column="61" lean-forward="true" selection-start-line="210" selection-start-column="61" selection-end-line="210" selection-end-column="61" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2019-01-22-Darkflow(Yolo)를-활용한-이미지-디텍션-구현-in windows.markdown">
+    <entry file="file://$PROJECT_DIR$/2019-01-15-Reaserch-note.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="258">
-            <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+          <first_editor relative-caret-position="152">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           </first_editor>
           <second_editor />
         </state>
