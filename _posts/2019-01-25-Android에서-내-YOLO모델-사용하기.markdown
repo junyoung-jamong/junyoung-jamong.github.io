@@ -101,7 +101,7 @@ def nativeBuildSystem = 'none'
 소스코드를 조금 변경하여 자신의 Object Detecting 문제로 어플을 커스터마이징 해보자.
 
 
-우선, [Darkflow를 활용하여 YOLO 모델로 이미지 디텍션 구현(윈도우 환경)](https://junyoung-jamong.github.io/deep/learning/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in windows.html)을 통해 
+우선, [Darkflow를 활용하여 YOLO 모델로 이미지 디텍션 구현(윈도우 환경)](https://junyoung-jamong.github.io/deep/learning/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.html)을 통해 
 기존에 학습된 YOLO 모델 및 가중치 정보를 어플에 적용하기 위해 darkflow/ckpt 내의 meta(weight 정보)파일과 모델의 cfg 파일을 이용해 * .pb 파일을 만들어야 한다.
 
 다음 명령어를 통해 최종적으로 학습된 weight를 * .pb로 저장할 수 있다. 
