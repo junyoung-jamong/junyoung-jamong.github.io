@@ -120,8 +120,7 @@ tensorflow\tensorflow\examples\android\assets
 <br/>
 <br/>
 
-* DetectorActivity.java
-
+* DetectorActivity.java<br/>
 
 ```
 private static final String YOLO_MODEL_FILE = "file:///android_asset/test-tiny-yolo-4c.pb";
@@ -136,7 +135,8 @@ private static final DetectorMode MODE = DetectorMode.YOLO;
 <br/>
 <br/>
 
-* TensorFlowYoloDetector.java
+* TensorFlowYoloDetector.java<br/>
+
 ```
 private static final int NUM_CLASSES = 4;
 ```

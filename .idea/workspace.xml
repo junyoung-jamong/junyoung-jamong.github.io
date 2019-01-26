@@ -50,8 +50,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-01-25-Android에서-내-YOLO모델-사용하기.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="103" column="143" selection-start-line="103" selection-start-column="143" selection-end-line="103" selection-end-column="143" />
+              <first_editor relative-caret-position="531">
+                <caret line="145" column="19" lean-forward="true" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -70,8 +70,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in windows.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in windows.markdown">
+      <file leaf-file-name="2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="4294">
@@ -221,7 +221,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in windows.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="4294">
@@ -271,7 +271,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in windows.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="4294">
@@ -284,8 +284,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-01-25-Android에서-내-YOLO모델-사용하기.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="103" column="143" selection-start-line="103" selection-start-column="143" selection-end-line="103" selection-end-column="143" />
+          <first_editor relative-caret-position="531">
+            <caret line="145" column="19" lean-forward="true" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
