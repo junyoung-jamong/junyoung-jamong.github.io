@@ -117,8 +117,12 @@ tensorflow\tensorflow\examples\android\assets
 ```
 
 이제 프로젝트 내 두 개의 java 파일을 수정하기만 하면 된다.
+<br/>
+<br/>
 
 * DetectorActivity.java
+
+
 ```
 private static final String YOLO_MODEL_FILE = "file:///android_asset/test-tiny-yolo-4c.pb";
 ```
@@ -128,6 +132,9 @@ private static final DetectorMode MODE = DetectorMode.YOLO;
 ```
 
 ![](/assets/image/how_to_customize_yolo_on_android/img6.png)
+
+<br/>
+<br/>
 
 * TensorFlowYoloDetector.java
 ```
