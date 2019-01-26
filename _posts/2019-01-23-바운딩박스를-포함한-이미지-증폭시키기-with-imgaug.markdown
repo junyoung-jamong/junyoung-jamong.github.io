@@ -226,7 +226,7 @@ pascal-voc-writer 모듈은 pip를 이용하여 설치할 수 있다.
 pip install pascal-voc-writer
 ```
 
-![](../assets/image/how_to_use_imgaug/img10.png)
+![](/assets/image/how_to_use_imgaug/img10.png)
 
 imgaug와 pascal-voc-writer를 이용한 이미지 생성 및 저장 코드 예제:
 
@@ -279,6 +279,6 @@ for idx in range(len(images)):
 
 ```
 
-동일 디렉토리 내에 image set과 annotation set을 준비한 후 프로그램 실행하면 아래와 같은 결과를 얻을 수 있다. 기호에 맞춰 코드를 수정해서 사용하면 된다.
+동일 디렉토리 내에 image set과 annotation set을 준비한 후 프로그램 실행하면 아래와 같은 결과를 얻을 수 있다. 기호에 맞춰 코드를 수정해서 사용하도록 하자.
 
-![](../assets/image/how_to_use_imgaug/img11.png)
+![](/assets/image/how_to_use_imgaug/img11.png)
