@@ -20,10 +20,19 @@ permalink: /about/
 
 
 ## Projects
-### 시약병 등록 자동화 시스템
-<br/>
-YOLO 모델을 이용한 Object Detection을 구현 <br/>
-...
+### 시약병 라벨 정보 자동 인식 모바일 시스템
+* Android(Java) Application
+* TensorFlow Lite 기반 YOLOv2 모델을 직접 학습하여 시약병 라벨 내 제조사, 제품명, 제품코드, CAS NO. 등 Object Detection을 구현함 <br/>
+* Android OpenCV OCR을 통해 감지 영역 별 텍스트 추출 기능을 구현함 <br/>
+* 기존의 text detector 사용 시 텍스트의 클래스를 구분하기 어려운 문제를 해결하고, 전체 이미지 사용 시 보다 높은 텍스트 인식을 달성함
 
 
+## Skills
+**Programming Language**<br/>
+> **Java**, **Python**, **C#**, Javascript, C, SQL, HTML5, CSS3, Solidity
 
+**Library/Framework**
+> WinForms, Android, Node.js, Tensorflow, Keras
+
+**Database**
+> Oracle, MySQL, SQLite3, SQL Server
