@@ -106,7 +106,7 @@ def read_anntation(xml_file: str):
     return bounding_box_list, file_name
 ```
 
-read_train_dataset 함수는 image 파일들과 각 이미지의 annotation xml 파일들이 함께 있는 디렉토리의 경로를 인자로 전달했을 때, 41차원(N:이미지 수, W:이미지 너비, H:이미지 높이, D:RGB) nparray로 변환된 이미지들과 3개의 항(bounding-box 리스트, xml 파일명, 관련 이미지 파일명)을 갖는 Annotation 투플의 리스트를 반환한다.
+read_train_dataset 함수는 image 파일들과 각 이미지의 annotation xml 파일들이 함께 있는 디렉토리의 경로를 인자로 전달했을 때, 4차원(N:이미지 수, W:이미지 너비, H:이미지 높이, D:RGB) nparray로 변환된 이미지들과 3개의 항(bounding-box 리스트, xml 파일명, 관련 이미지 파일명)을 갖는 Annotation 투플의 리스트를 반환한다.
 
 ```
 from os import listdir
@@ -218,4 +218,67 @@ seq = iaa.Sequential([
 imgaug를 이용하여 학습용 원본 이미지를 Bounding-box와 함께 augmenting 하는 방법을 알아봤다.
 이제 변환된 이미지와 함께 annotation 파일을 저장하기만 하면 된다.
 
-...
+새로운 이미지의 Annotation 정보를 담는 xml 문서는 pascal-voc-writer 모듈을 기반으로 생성한다.
+
+pascal-voc-writer 모듈은 pip를 이용하여 설치할 수 있다.
+
+```
+pip install pascal-voc-writer
+```
+
+![](../assets/image/how_to_use_imgaug/img10.png)
+
+imgaug와 pascal-voc-writer를 이용한 이미지 생성 및 저장 코드 예제:
+
+```
+import imgaug as ia
+from imgaug import augmenters as iaa
+from files import *
+from pascal_voc_writer import Writer
+
+ia.seed(1)
+
+dir = 'images/'
+images, annotations = read_train_dataset(dir)
+
+for idx in range(len(images)):
+    image = images[idx]
+    boxes = annotations[idx][0]
+
+    ia_bounding_boxes = []
+    for box in boxes:
+        ia_bounding_boxes.append(ia.BoundingBox(x1=box[1], y1=box[2], x2=box[3], y2=box[4]))
+
+    bbs = ia.BoundingBoxesOnImage(ia_bounding_boxes, shape=image.shape)
+
+    seq = iaa.Sequential([
+        iaa.Multiply((1.2, 1.5)),
+        iaa.Affine(
+            translate_px={"x": 40, "y": 60},
+            scale=(0.5, 0.7),
+            rotate=45
+        )
+    ])
+
+    seq_det = seq.to_deterministic()
+
+    image_aug = seq_det.augment_images([image])[0]
+    bbs_aug = seq_det.augment_bounding_boxes([bbs])[0]
+
+    new_image_file = dir + 'after_' + annotations[idx][2]
+    cv2.imwrite(new_image_file, image_aug)
+
+    h, w = np.shape(image_aug)[0:2]
+    voc_writer = Writer(new_image_file, w, h)
+
+    for i in range(len(bbs_aug.bounding_boxes)):
+        bb_box = bbs_aug.bounding_boxes[i]
+        voc_writer.addObject(boxes[i][0], int(bb_box.x1), int(bb_box.y1), int(bb_box.x2), int(bb_box.y2))
+
+    voc_writer.save(dir + 'after_' + annotations[idx][1])
+
+```
+
+동일 디렉토리 내에 image set과 annotation set을 준비한 후 프로그램 실행하면 아래와 같은 결과를 얻을 수 있다. 기호에 맞춰 코드를 수정해서 사용하면 된다.
+
+![](../assets/image/how_to_use_imgaug/img11.png)
