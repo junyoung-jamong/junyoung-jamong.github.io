@@ -43,8 +43,36 @@ cmd 창에서 아래 명령어를 통해 특정 이미지로부터 텍스트 추
 
 ```
 tesseract IMG_1.jpg stdout -l eng > IMG_1.txt
-tesseract -c preserve_interword_spaces=1 IMG_5624.jpg stdout -l eng > IMG_5624.txt
 ```
+
+옵션 사용 시: <br/>
+```
+tesseract -c preserve_interword_spaces=1 IMG_5624.jpg stdout -l eng > IMG_5624.txt
+
+tesseract --oem 1 --psm 7 IMG_5624.jpg stdout -l eng > IMG_5624.txt
+```
+
+> * OCR Engine modes(--oem): <br/>
+> 0 - Legacy engine only. <br/>
+> 1 - Neural nets LSTM engine only. <br/>
+> 2 - Legacy + LSTM engines. <br/>
+> 3 - Default, based on what is available. <br/>
+
+> * Page segmentation modes(--psm): <br/>
+>  0 - Orientation and script detection (OSD) only. <br/>
+>  1 - Automatic page segmentation with OSD. <br/>
+>  2 - Automatic page segmentation, but no OSD, or OCR. <br/>
+>  3 - Fully automatic page segmentation, but no OSD. (Default) <br/>
+>  4 - Assume a single column of text of variable sizes. <br/>
+>  5 - Assume a single uniform block of vertically aligned text. <br/>
+>  6 - Assume a single uniform block of text. <br/>
+>  7 - Treat the image as a single text line. <br/>
+>  8 - Treat the image as a single word. <br/>
+>  9 - Treat the image as a single word in a circle. <br/>
+> 10 - Treat the image as a single character. <br/>
+> 11 - Sparse text. Find as much text as possible in no particular order. <br/>
+> 12 - Sparse text with OSD. <br/>
+> 13 - Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific. <br/>
 
 여러 언어를 동시에 인식하고 싶을 경우에는 kor+eng 와 같이 옵션을 주면 된다.
 ```
@@ -63,11 +91,13 @@ tesseract -c preserve_interword_spaces=1 IMG_5624.jpg stdout -l kor+eng > IMG_56
 텍스트 추출 결과가 아주 정확하지는 않다는 것을 확인 할 수 있다. 텍스트 추출 정확도는 이미지에 따라서 크게 차이 날 수 있다. 텍스트가 잘 정리되고 나열된 상태의 이미지라면 더 정확한 인식이 가능하다.
 
 아래는 다른 시약병 이미지에 대한 tesseract OCR 텍스트 추출 결과이다. 
+
 ![](/assets/image/how_to_use_tesseract_in_python/IMG_11.png)
 
 앞선 이미지와 마찬가지로 제조사명은 추출되지 않았다. 이미지 내에 텍스트들이 다소 여러 부분에 분포되어 있기 때문에 전체 텍스트 구조를 분석하고 인식하는 과정에서 다양한 오차가 발생할 수 있다.
+이와 같이 이미지에 노이즈가 많거나 Tesseract를 적용하기 전에 이미지가 제대로 사전 처리되지 않으면 성능이 크게 떨어질 수 있다.
+ 
 이러한 문제를 개선할 수 있는 여러 가지 방법이 있는데, 그 중 한가지는 이미지에서 특정 텍스트 부분만 잘라내어 별도로 텍스트 추출을 수행하는 방법이다. 
-
 예를 들어, 원본 이미지에서 제조사명 부분만 잘라낸 이미지에 대해 텍스트 추출을 수행한 결과 아래와 같이 정확하게 제조사명을 출력한 것을 확인 할 수 있다.
 
 ![](/assets/image/how_to_use_tesseract_in_python/IMG_12.png)
@@ -120,8 +150,5 @@ pytesseract.image_to_string('img.png', lang='eng', config='--psm 1 -c preserve_i
 ## OCR 정확도 개선
 ...
 
-
-
-
-
-
+* [EAST Github](https://github.com/argman/EAST)
+* [EAST paper - EAST: An Efficient and Accurate Scene Text Detector](https://arxiv.org/pdf/1704.03155.pdf)
