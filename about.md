@@ -11,13 +11,12 @@ permalink: /about/
 ### Kang Jun Young (*강준영*)
 
 > Email : msmapark2@gmail.com <br/>
-> Github : https://github.com/junyoung-jamong <br/>
-> Github Blog : https://junyoung-jamong.github.io <br/>
-> Naver Blog : https://blog.naver.com/rkdwnsdud555 <br/>
+> Github : [https://github.com/junyoung-jamong](https://github.com/junyoung-jamong) <br/>
+> Github Blog : [https://junyoung-jamong.github.io](https://junyoung-jamong.github.io) <br/>
+> Naver Blog : [https://blog.naver.com/rkdwnsdud555](https://blog.naver.com/rkdwnsdud555) <br/>
 
 서울시립대학교 컴퓨터과학부 졸업<br/>
 서울시립대학교 컴퓨터과학과 대학원(공학석사) 졸업예정<br/>
-
 
 ## Projects
 ### 시약병 라벨 정보 자동 인식 모바일 시스템
