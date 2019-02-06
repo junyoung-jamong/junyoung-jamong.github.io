@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="20694103-ff12-4c41-aae7-824a9be425a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,19 +46,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2019-01-25-Android에서-내-YOLO모델-사용하기.markdown" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2019-01-25-Android에서-내-YOLO모델-사용하기.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-01-25-Android에서-내-YOLO모델-사용하기.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2888">
-                <caret line="152" selection-start-line="152" selection-end-line="152" selection-end-column="60" />
+              <first_editor relative-caret-position="266">
+                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -137,15 +136,15 @@
       <list>
         <option value="$PROJECT_DIR$/_posts/2019-01-22-Darkflow(Yolo)를-활용한-이미지-디텍션-구현-in windows.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-01-23-바운딩박스를-포함한-이미지-증폭시키기-with-imgaug.markdown" />
-        <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/_posts/2019-01-25-Android에서-내-YOLO모델-사용하기.markdown" />
         <option value="$PROJECT_DIR$/temps/2019-02-06-An-Overview-of-the-YOLO-paper.markdown" />
         <option value="$PROJECT_DIR$/temps/2019-02-06-Tesseract-OCR-Engine-개요.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" />
+        <option value="$PROJECT_DIR$/about.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1939" />
@@ -223,7 +222,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="-10" width="1939" height="1059" extended-state="0" />
+    <frame x="-10" y="-10" width="1939" height="1059" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0878485" />
@@ -329,16 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="342">
-            <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -354,6 +343,26 @@
         <state split_layout="SPLIT">
           <first_editor>
             <caret selection-end-line="5" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="494">
+            <caret line="104" column="45" lean-forward="true" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="380">
+            <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
@@ -382,18 +391,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-01-25-Android에서-내-YOLO모델-사용하기.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2888">
-            <caret line="152" selection-start-line="152" selection-end-line="152" selection-end-column="60" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="494">
-            <caret line="104" column="45" lean-forward="true" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
+          <first_editor relative-caret-position="266">
+            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           </first_editor>
           <second_editor />
         </state>
