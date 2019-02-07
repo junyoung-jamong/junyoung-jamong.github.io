@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20694103-ff12-4c41-aae7-824a9be425a6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/_posts/2019-01-15-Reaserch-note.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-01-15-Reaserch-note.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,36 +47,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="2019-01-15-Reaserch-note.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-01-15-Reaserch-note.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="227">
+                <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="730">
-                <caret line="152" column="54" lean-forward="true" selection-start-line="152" selection-start-column="54" selection-end-line="152" selection-end-column="54" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2019-01-23-바운딩박스를-포함한-이미지-증폭시키기-with-imgaug.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-01-23-바운딩박스를-포함한-이미지-증폭시키기-with-imgaug.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret selection-end-line="5" selection-end-column="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="4294">
-                <caret line="226" selection-start-line="226" selection-end-line="226" />
+              <first_editor relative-caret-position="95">
+                <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -104,6 +93,8 @@
         <option value="$PROJECT_DIR$/temps/2019-02-06-An-Overview-of-the-YOLO-paper.markdown" />
         <option value="$PROJECT_DIR$/temps/2019-02-06-Tesseract-OCR-Engine-개요.markdown" />
         <option value="$PROJECT_DIR$/about.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-01-15-Reaserch-note.markdown" />
+        <option value="$PROJECT_DIR$/_temps/OpenCV-Study_Note.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown" />
       </list>
     </option>
@@ -134,6 +125,11 @@
               <item name="junyoung-jamong.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="junyoung-jamong.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="junyoung-jamong.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="junyoung-jamong.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_temps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="junyoung-jamong.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -181,10 +177,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="-10" width="1939" height="1059" extended-state="1" />
+    <frame x="-10" y="-10" width="1939" height="1059" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0878485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18043135" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -287,26 +283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="4294">
-            <caret line="226" selection-start-line="226" selection-end-line="226" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-23-바운딩박스를-포함한-이미지-증폭시키기-with-imgaug.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="5" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -347,11 +323,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-23-바운딩박스를-포함한-이미지-증폭시키기-with-imgaug.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="5" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-22-Darkflow를-활용해-YOLO모델-이미지-디텍션-구현-in-windows.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="830">
+            <caret line="226" selection-start-line="226" selection-end-line="226" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_temps/OpenCV-Study_Note.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="683">
+            <caret line="132" column="89" lean-forward="true" selection-start-line="132" selection-start-column="89" selection-end-line="132" selection-end-column="89" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-15-Reaserch-note.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="227">
+            <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-01-30-Python에서-Tesseract를-이용해-OCR-수행하기.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="730">
-            <caret line="152" column="54" lean-forward="true" selection-start-line="152" selection-start-column="54" selection-end-line="152" selection-end-column="54" />
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>

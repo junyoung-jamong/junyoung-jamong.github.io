@@ -148,7 +148,41 @@ pytesseract.image_to_string('img.png', lang='eng', config='--psm 1 -c preserve_i
 ![](/assets/image/how_to_use_tesseract_in_python/IMG_17.png)
 
 ## OCR 정확도 개선
-...
+Tesseract는 배경으로부터 전경 텍스트가 깨끗히 세분화가있을 때 가장 효과적인 결과를 얻을 수 있다. 
+따라서, 보다 높은 텍스트 인식률을 달성하기 위해서는 OCR 수행에 앞서 반드시 원본이미지에 대한 전처리 과정이 포함되어야 한다.
 
+다음은 OpenCV를 이용하여 Tesseract OCR 인식률을 높이기 위한 전처리 방법들 중 일부를 소개한다.
+
+원본 이미지: <br/>
+![](../assets/image/how_to_use_tesseract_in_python/IMG_18.png)
+
+```
+import cv2
+
+image = cv2.imread('IMG_1.jpg')
+```
+
+* 그레이 스케일로 변환하기
+```
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+```
+![](../assets/image/how_to_use_tesseract_in_python/IMG_19.png)
+
+* 배경에서 전경 텍스트를 분할하기 위해 임계값을 사용한다. 
+플래그 값에 대한 자세한 내용은 [공식 OpenCV 설명서](https://docs.opencv.org/trunk/d7/d4d/tutorial_py_thresholding.html)를 참조하자. 
+이러한 임계값 사용은 회색 배경 위에 겹쳐진 검은색 텍스트를 읽는 데 유용하다.
+```
+gray = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
+```
+![](../assets/image/how_to_use_tesseract_in_python/IMG_20.png)
+
+임계값 사용 대신, 블러(Blur) 처리를 적용될 수있다. medianBlur를 적용하면 이미지의 노이즈를 줄일 수 있다.
+```
+gray = cv2.medianBlur(gray, 10)
+```
+
+## References
+* [pyimagesearch - Using Tesseract OCR with Python](https://www.pyimagesearch.com/2017/07/10/using-tesseract-ocr-python/)
+* [pyimagesearch - OpenCV OCR and text recognition with Tesseract](https://www.pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/)
 * [EAST Github](https://github.com/argman/EAST)
 * [EAST paper - EAST: An Efficient and Accurate Scene Text Detector](https://arxiv.org/pdf/1704.03155.pdf)
