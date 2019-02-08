@@ -15,43 +15,41 @@ Android Tesseract
 
 ### NDK + OpenCV 개발 환경 구축하기
 
-우선, Android Studio에서 새로운 프로젝트를 생성할 때, (Android Studio3.3 기준)Native C++ 템플릿을 선택해준다.
-
-![](../assets/image/how_to_use_tesseract_in_android/img_01.png)
+우선, Android Studio에서 새로운 프로젝트를 생성할 때, (Android Studio3.3 기준)Native C++ 템플릿을 선택해준다/image/how_to_use_tesseract_in_android/img_01.png)
 
 Native C++ 템플릿을 선택 후 프로젝트를 생성할 경우 일반적인 안드로이드 프로젝트와 달리 cpp 폴더와 내부에 native-lib.cpp 파일이 함께 생성된다.
 
-![](../assets/image/how_to_use_tesseract_in_android/img_02.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_02.png)
 
 아직 NDK 및 CMake, LLDB가 설치되어 있지 않을 경우 SDK Manager를 통해 설치해주면 된다.
  
-![](../assets/image/how_to_use_tesseract_in_android/img_025.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_025.png)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_03.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_03.png)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_04.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_04.png)
 
 Android 개발환경에서 OpenCV를 사용하기 위해서는 안드로이드용 OpenCV SDK를 별도로 설치해줘야 한다. [설치링크](https://github.com/opencv/opencv/releases)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_05.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_05.png)
 
 다운받은 Android OpenCV SDK 압축파일을 해제한 후 프로젝트에 Module로 추가해준다. 
 
-![](../assets/image/how_to_use_tesseract_in_android/img_06.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_06.png)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_07.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_07.png)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_08.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_08.png)
 
 OpenCV 모듈 Import를 완료하였다면, 프로젝트에 라이브러리로 등록해준다.
 
-![](../assets/image/how_to_use_tesseract_in_android/img_09.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_09.png)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_10.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_10.png)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_11.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_11.png)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_12.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_12.png)
 
 ### Android Tesseract 사용하기
 
@@ -219,7 +217,7 @@ public class CameraSurfaceView extends SurfaceView implements SurfaceHolder.Call
 
 UI화면은 아래와 같이 구성하였다. 직접 정의한 CameraSurfaceView, 촬영한 이미지를 보여주는 ImageView, 캡쳐를 위한 버튼, 그리고 하단에는 OCR 결과 텍스트를 보여주기 위한 TextView가 있다.
 
-![](../assets/image/how_to_use_tesseract_in_android/img_18.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_18.png)
 
 **activity_main.xml**
 ```
@@ -471,22 +469,22 @@ if(checkLanguageFile(dir+"/tessdata"))
 각 언어별 학습 데이터는 다음 링크에서 받을 수 있다. <https://github.com/tesseract-ocr/tessdata>
 
 >**한글 데이터<br/>**
-![](../assets/image/how_to_use_tesseract_in_android/img_13.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_13.png)
 
 >**영문 데이터<br/>**
-![](../assets/image/how_to_use_tesseract_in_android/img_14.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_14.png)
 
 여기서는 Assets 폴더에 미리 언어 파일을 저장하고, 처음 프로그램이 실행되면, 내부 디렉토리에 파일을 복사하여 사용하는 방식으로 진행된다. 이럴 경우 각 기기마다 별도로 언어파일을 외장 스토리지에 저장할 필요가 없어진다.
 
 Assets 폴더는 아래와 같이 생성할 수 있다.
 
-![](../assets/image/how_to_use_tesseract_in_android/img_15.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_15.png)
 
 다운받은 적용할 언어 데이터 파일을 해당 디렉토리에 Copy&Paste 해주면 된다.
 
-![](../assets/image/how_to_use_tesseract_in_android/img_16.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_16.png)
 
-![](../assets/image/how_to_use_tesseract_in_android/img_17.png)
+![](/assets/image/how_to_use_tesseract_in_android/img_17.png)
 
 프로그램 처음 실행 시 checkLanguageFile() 함수를 통해 내부 디렉토리에 해당 파일이 존재하는 지 체크하고, 없을 경우 createFiles() 함수에서 Assets 폴도 내 언어 데이터 파일을 읽어 지정된 경로에 파일을 복사한다.
 
@@ -538,4 +536,4 @@ private class AsyncTess extends AsyncTask<Bitmap, Integer, String> {
 
 실질적으로는 tessBaseAPI.setImage(); tessBaseAPI.getUTF8Text(); 두 개의 함수 호출로 이미지로부터 텍스트를 인식/추출할 수 있다.
 
-![](../assets/image/how_to_use_tesseract_in_android/gif_01.gif)
+![](/assets/image/how_to_use_tesseract_in_android/gif_01.gif)
