@@ -439,7 +439,6 @@ public class MainActivity extends AppCompatActivity{
         }
 
         protected void onPostExecute(String result) {
-            //완료 후 버튼 속성 변경 및 결과 출력
             textView.setText(result);
             Toast.makeText(MainActivity.this, ""+result, Toast.LENGTH_LONG).show();
 
@@ -524,7 +523,6 @@ private class AsyncTess extends AsyncTask<Bitmap, Integer, String> {
         }
 
         protected void onPostExecute(String result) {
-            //완료 후 버튼 속성 변경 및 결과 출력
             textView.setText(result);
             Toast.makeText(MainActivity.this, ""+result, Toast.LENGTH_LONG).show();
 

@@ -62,8 +62,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-02-07-Android-Tesseract-사용하기.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="737">
-                <caret line="539" lean-forward="true" selection-start-line="539" selection-end-line="539" />
+              <first_editor relative-caret-position="490">
+                <caret line="186" column="35" lean-forward="true" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -402,8 +402,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-02-07-Android-Tesseract-사용하기.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="737">
-            <caret line="539" lean-forward="true" selection-start-line="539" selection-end-line="539" />
+          <first_editor relative-caret-position="490">
+            <caret line="186" column="35" lean-forward="true" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="35" />
           </first_editor>
           <second_editor />
         </state>
