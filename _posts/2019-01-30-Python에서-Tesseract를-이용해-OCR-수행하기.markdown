@@ -154,7 +154,7 @@ Tesseract는 배경으로부터 전경 텍스트가 깨끗히 세분화가있을
 다음은 OpenCV를 이용하여 Tesseract OCR 인식률을 높이기 위한 전처리 방법들 중 일부를 소개한다.
 
 원본 이미지: <br/>
-![](../assets/image/how_to_use_tesseract_in_python/IMG_18.png)
+![](/assets/image/how_to_use_tesseract_in_python/IMG_18.png)
 
 ```
 import cv2
@@ -166,7 +166,7 @@ image = cv2.imread('IMG_1.jpg')
 ```
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 ```
-![](../assets/image/how_to_use_tesseract_in_python/IMG_19.png)
+![](/assets/image/how_to_use_tesseract_in_python/IMG_19.png)
 
 * 배경에서 전경 텍스트를 분할하기 위해 임계값을 사용한다. 
 플래그 값에 대한 자세한 내용은 [공식 OpenCV 설명서](https://docs.opencv.org/trunk/d7/d4d/tutorial_py_thresholding.html)를 참조하자. 
@@ -174,7 +174,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 ```
 gray = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
 ```
-![](../assets/image/how_to_use_tesseract_in_python/IMG_20.png)
+![](/assets/image/how_to_use_tesseract_in_python/IMG_20.png)
 
 임계값 사용 대신, 블러(Blur) 처리를 적용될 수있다. medianBlur를 적용하면 이미지의 노이즈를 줄일 수 있다.
 ```
