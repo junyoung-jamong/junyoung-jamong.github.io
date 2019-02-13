@@ -21,10 +21,15 @@ FastMGTS
 --------
 2019-02-07 <br/>
 
-> * 예정 실험
+> * 수행 실험
 >   * FastMGTS와 DTW constraint(5%)의 쿼리 예측 클래스 비교. - FastMGTS는 DTW를 대체 가능한가?
->
->
+>       * 70개의 UCR 데이터에서 평균 20%
+
+2019-02-12 <br/>
+
+> * 예정 실험
+>   * FastMGTS의 변동성 측정을 위해 10회 반복실험 + 수행 시간 측정
+>   * DTW Constraints 10% => 5%로 수정 후 diversity check
  
 Doublet loss for weighted multi grid similarity
 -------------------------------------------------
